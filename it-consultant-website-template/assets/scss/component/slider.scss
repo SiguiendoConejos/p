@@ -1,0 +1,139 @@
+.banner{
+    position: relative;
+    background:$bg-color;
+
+    .shap{
+        position:absolute;
+        background:url(../images/shaps/shape-01.png) no-repeat center;
+        background-size:cover;
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        z-index:1;
+        opacity:.1;
+    }
+    .wrapper{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        margin:3.125rem 0;
+        position: relative;
+        z-index:2;
+
+        .link-button{
+            display:block;
+            position: relative;
+
+            ol{
+                li{
+                    display:inline-block;
+                    margin:.625rem .3125rem;
+                    padding:.625rem .9375rem;
+                    background:$icons-color;
+                    border-radius:1.25rem;
+
+                    a{
+                        display:block;
+                        font-size:1rem;
+                        color:$color-primary;
+                        font-weight:600;
+                    }
+                }
+            }
+        }
+        .banner-image{
+            margin:1.25rem 0 0;
+            position: relative;
+
+            img{
+                border-radius:.3125rem;;
+            }
+        }
+
+        .content{
+            display:block;
+            position: relative;
+            padding:3.125rem .625rem 1.875rem 5rem;
+            color:$color-primary;
+
+            span{
+                display:block;
+                margin:.625rem 0;
+                padding:0 0 0 .625rem;
+                position: relative;
+                font-size:1rem;
+                letter-spacing:.5px;
+                text-transform:capitalize;
+
+                &::before{
+                    content:"";
+                    position: absolute;
+                    left:0;
+                    top:0;
+                    width:.1875rem;
+                    height:100%;
+                    background-color: $icons-color;
+                }
+            }
+
+            h2{
+                display:block;
+                margin:.625rem 0;
+                font-size:2rem;
+                line-height:3.125rem;
+                font-weight:600;
+                text-transform:uppercase;
+                letter-spacing:.0625rem;
+
+            }
+
+            p{
+                display:block;
+                font-size:.9375rem;
+                line-height:1.5625rem;
+                margin:.625rem 0;
+                text-transform: lowercase;
+                letter-spacing:.7px;
+            }
+
+            .social-media{
+                position: absolute;
+                left:0;
+                z-index:1;
+
+                ol{
+                    li{
+                        display:block;
+                        margin:1.25rem 0;
+                        position: relative;
+
+                        a{
+                            height:2.125rem;
+                            width:2.125rem;
+                            display:block;
+                            border-radius:50%;
+                            border:1px solid #5c5476;
+                            transition: all ease .5s;
+
+                            &:hover{
+                                background-color:$icons-color;
+
+                            }
+
+                            i{
+                                width:100%;
+                                height:100%;
+                                display:flex;
+                                align-items: center;
+                                justify-content:center;
+                                color:$color-primary;
+                                transition: all ease .7s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
